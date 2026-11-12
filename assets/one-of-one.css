@@ -1,0 +1,101 @@
+.exclusive-page{background:#fff;padding:0 3.125% 80px;color:var(--ink);font-family:var(--font-body)}
+.exclusive-intro{text-align:center;max-width:760px;margin:auto;padding:70px 20px 42px}
+.exclusive-kicker{font-size:12px;letter-spacing:.12em;color:var(--wine);margin:0 0 20px}
+.exclusive-intro h1{font-size:30px;font-weight:400;line-height:1.3;color:var(--wine);margin:0 0 22px}
+.exclusive-intro>p:last-child{font-size:16px;line-height:1.7;margin:0}
+.exclusive-release{max-width:760px;margin:0 auto 48px;text-align:center}
+.exclusive-release h2,.exclusive-story h2{font-size:18px;font-weight:400;line-height:1.5;color:var(--wine);margin:0 0 18px}
+.exclusive-release p,.exclusive-story p{font-size:16px;line-height:1.7;margin:0 0 16px}
+.exclusive-gallery{max-width:1200px;margin:0 auto}
+.exclusive-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.exclusive-track::-webkit-scrollbar{display:none}
+.exclusive-slide{flex:0 0 100%;min-width:0;margin:0;scroll-snap-align:start;scroll-snap-stop:always;display:grid;place-items:center;background:#fff}
+.exclusive-slide img{display:block;width:100%;height:auto;max-height:78svh;object-fit:contain}
+.exclusive-gallery-controls{display:flex;align-items:center;justify-content:center;gap:24px;padding:16px 0}
+.exclusive-gallery-controls button{width:44px;height:44px;background:#fff;border:1px solid #843b3b55;color:var(--wine);border-radius:50%;font-size:20px;cursor:pointer}
+.exclusive-gallery-controls button:disabled{opacity:.3;cursor:default}
+.exclusive-counter{font-size:13px;letter-spacing:.08em;margin:0;color:var(--wine)}
+.exclusive-divider{display:flex;justify-content:center;align-items:center;gap:38px;margin:46px auto;color:var(--wine);font-size:16px}.exclusive-divider span{font-size:24px}
+.exclusive-story{max-width:900px;margin:auto;text-align:center}
+@media(max-width:760px){.exclusive-page{padding:0 4% 48px}.exclusive-intro{padding:44px 12px 28px}.exclusive-intro h1{font-size:26px}.exclusive-release{margin-bottom:28px}.exclusive-release p,.exclusive-story p,.exclusive-intro>p:last-child{font-size:14px}.exclusive-divider{margin:30px auto}.exclusive-story h2{font-size:16px}.exclusive-slide img{max-height:65svh}}
+
+/* Black ornamental divider using the site's existing flourish artwork. */
+.exclusive-divider{gap:32px}
+.exclusive-divider .exclusive-ornament{display:block;flex:none;width:28px;height:44px;fill:#000;overflow:visible}
+.exclusive-divider .exclusive-ornament-center{width:40px;height:64px}
+@media(max-width:760px){.exclusive-divider{gap:24px}.exclusive-divider .exclusive-ornament{width:23px;height:36px}.exclusive-divider .exclusive-ornament-center{width:34px;height:54px}}
+/* Uppercase typography throughout the One of One page. */
+.one-of-one-page{text-transform:uppercase}
+.one-of-one-page button,.one-of-one-page input,.one-of-one-page select,.one-of-one-page textarea,.one-of-one-page dialog{text-transform:uppercase}
+/* Full-bleed gallery with the previous image-area height preserved. */
+.exclusive-gallery{max-width:none;width:calc(100% + 6.666667%);margin-inline:-3.333333%}
+.exclusive-slide{height:min(calc(min(93.75vw,1200px) * 1.333333),78svh)}
+.exclusive-slide img{width:100%;height:100%;max-height:none;object-fit:cover}
+@media(max-width:760px){
+ .exclusive-gallery{width:calc(100% + 8.695652%);margin-inline:-4.347826%}
+ .exclusive-slide{height:min(calc(92vw * 1.333333),65svh)}
+ .exclusive-slide img{max-height:none}
+}
+/* Editorial details inspired by the mobile reference, shared across sizes. */
+.exclusive-page{background:#fcf9f6}
+.exclusive-title-wrap{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;min-height:116px;margin:-8px auto 18px;width:min(100%,380px)}
+.exclusive-title-wrap h1{position:relative;z-index:1;margin:0;padding:16px 0;font-weight:400}
+.exclusive-title-wrap::after{content:'';position:absolute;left:5%;right:5%;top:50%;height:1px;background:linear-gradient(90deg,transparent,#843b3b33 25%,#843b3b33 75%,transparent);z-index:-1}
+.exclusive-monogram{position:absolute;width:280px;height:136px;left:50%;top:50%;transform:translate(-50%,-50%);color:#77706b;opacity:.23;pointer-events:none;z-index:-1}
+.exclusive-kicker{color:#111;position:relative;z-index:1}
+.exclusive-release h2{display:flex;align-items:center;justify-content:center;gap:26px;margin-bottom:18px}
+.exclusive-release h2::before,.exclusive-release h2::after{content:'';flex:1;max-width:180px;height:1px;background:#9a858477}
+.exclusive-gallery-controls button{background:transparent;border-color:#843b3b55}
+.exclusive-gallery-controls button:not(:disabled):hover{background:var(--wine);color:#fff}
+.exclusive-story h2{position:relative;padding:8px 22px;margin-bottom:22px}
+.exclusive-story h2::before,.exclusive-story h2::after{content:'';position:absolute;top:3px;bottom:3px;width:9px;border-top:1px solid #843b3b;border-bottom:1px solid #843b3b;pointer-events:none}
+.exclusive-story h2::before{left:0;border-left:1px solid #843b3b}
+.exclusive-story h2::after{right:0;border-right:1px solid #843b3b}
+@media(max-width:760px){
+ .exclusive-intro{padding-top:26px;padding-bottom:20px}
+ .exclusive-kicker{margin-bottom:12px;font-size:12px}
+ .exclusive-title-wrap{min-height:92px;margin:-4px auto 12px}
+ .exclusive-monogram{width:235px;height:114px}
+ .exclusive-release h2{gap:24px;margin-bottom:14px}
+ .exclusive-release h2::before,.exclusive-release h2::after{max-width:110px}
+ .exclusive-gallery-controls{gap:20px;padding:16px 0 8px}
+ .exclusive-gallery-controls button{width:34px;height:34px;font-size:18px}
+ .exclusive-divider{margin:14px auto 20px;gap:23px}
+ .exclusive-divider .exclusive-ornament{width:18px;height:28px}
+ .exclusive-divider .exclusive-ornament-center{width:26px;height:38px}
+ .exclusive-story h2{font-size:16px;padding:6px 15px;margin-bottom:18px}
+}
+/* Three framed collection cards replace the editorial gallery. */
+.exclusive-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1500px;margin:0 auto}
+.exclusive-card{min-width:0;text-align:center}
+.exclusive-frame{position:relative;aspect-ratio:1;isolation:isolate}
+.exclusive-frame-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;z-index:2}
+.exclusive-card-window{position:absolute;left:25%;top:18%;width:54%;height:67%;display:grid;place-items:center;background:linear-gradient(135deg,#f5f2ef,#e8e2dc);color:#181818}
+.exclusive-card-window span{font-family:var(--font-brand);font-size:clamp(20px,4vw,60px);font-style:italic;opacity:.28}
+.exclusive-card h2{font-weight:400;font-size:clamp(14px,1.5vw,22px);line-height:1.4;color:var(--wine);margin:18px 0 8px}
+.exclusive-card>p{font-size:12px;letter-spacing:.08em;margin:0}
+@media(max-width:760px){.exclusive-cards{gap:8px}.exclusive-card h2{font-size:10px;margin-top:12px}.exclusive-card>p{font-size:9px}.exclusive-card-window span{font-size:20px}}
+/* Larger mobile frames in a single swipeable row. */
+@media(max-width:760px){
+ .exclusive-cards{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--wine) #eee;padding-bottom:16px}
+ .exclusive-cards>.exclusive-card{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+ .exclusive-card h2{font-size:18px;margin-top:16px}
+ .exclusive-card>p{font-size:12px}
+ .exclusive-card-window span{font-size:clamp(36px,12vw,64px)}
+ .exclusive-cards::-webkit-scrollbar{height:3px}
+ .exclusive-cards::-webkit-scrollbar-thumb{background:var(--wine);border-radius:3px}
+}
+/* Natural casing for black body text; accent headings retain uppercase. */
+.exclusive-intro>p:last-child,
+.exclusive-release>p,
+.exclusive-story>p,
+.exclusive-card>p{ text-transform:none; }
+
+.exclusive-kicker{text-transform:none}
+/* Larger, more readable black copy on the collection page. */
+.exclusive-intro>p:last-child,.exclusive-release>p,.exclusive-story>p{font-size:18px;line-height:1.8}
+.exclusive-kicker{font-size:14px}
+.exclusive-card>p{font-size:14px}
+@media(max-width:760px){.exclusive-intro>p:last-child,.exclusive-release>p,.exclusive-story>p{font-size:16px;line-height:1.75}.exclusive-kicker{font-size:13px}.exclusive-card>p{font-size:14px}}
+/* Slightly smaller mobile frames, with a preview of the next card. */
+@media(max-width:760px){.exclusive-cards>.exclusive-card{flex-basis:78%}}

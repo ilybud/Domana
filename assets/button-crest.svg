@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 400 108" shape-rendering="geometricPrecision" fill="none">
+<defs>
+ <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#fff"/><stop offset=".42" stop-color="#fff"/><stop offset=".72" stop-color="#e9e9e9"/><stop offset="1" stop-color="#fff"/></linearGradient>
+ <filter id="depth" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy=".7" stdDeviation=".45" flood-color="#000" flood-opacity=".22"/></filter>
+ <path id="scroll" d="M200 85C187 65 177 49 164 53C151 57 156 69 164 66C157 62 167 56 177 64C187 72 192 80 195 87C177 76 164 74 151 79C133 86 125 72 132 63C137 57 142 64 138 68C151 67 150 53 140 51C120 48 117 68 127 79C109 63 99 59 88 65C80 70 77 72 68 70C75 79 84 81 90 76C104 67 117 83 131 86C151 93 168 80 193 91L200 99Z"/>
+</defs>
+<g filter="url(#depth)" fill="url(#metal)" stroke="#fff" stroke-width=".5" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M5 79H126M274 79H395" stroke-width=".8"/>
+ <path d="M38 79Q47 78 48 70Q49 78 58 79Q49 80 48 88Q47 80 38 79ZM342 79Q351 78 352 70Q353 78 362 79Q353 80 352 88Q351 80 342 79Z"/>
+ <use href="#scroll"/><use href="#scroll" transform="translate(400 0) scale(-1 1)"/>
+ <path d="M200 4C197 20 186 24 190 36C192 43 198 47 199 57C190 37 176 31 173 44C170 54 181 57 185 51C174 53 176 40 183 44C194 50 195 67 197 82L200 91L203 82C205 67 206 50 217 44C224 40 226 53 215 51C219 57 230 54 227 44C224 31 210 37 201 57C202 47 208 43 210 36C214 24 203 20 200 4Z"/>
+ <path d="M192 91Q198 88 200 82Q202 88 208 91L200 100Z"/>
+</g></svg>

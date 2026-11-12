@@ -1,0 +1,15 @@
+/* Sculpted, symmetrical scrollwork around the original white button. */
+.ornament-button-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;margin:30px 32px 24px;isolation:isolate}
+.button-ornament{position:absolute;pointer-events:none;background:url('button-crest.svg?v=white-4') center/contain no-repeat;z-index:3}
+.ornament-crown{width:76%;height:36px;left:12%;bottom:calc(100% + 1px)}
+.ornament-left,.ornament-right{width:90px;height:29px;top:50%}
+.ornament-left{left:-62px;transform:translateY(-50%) rotate(-90deg)}
+.ornament-right{right:-62px;transform:translateY(-50%) rotate(90deg)}
+.ornament-button-wrap::before{content:'';position:absolute;inset:-5px;border:1px solid #fff;border-radius:999px;box-shadow:0 1px 2px #0003;pointer-events:none;z-index:2}
+.ornament-button-wrap::after{content:'';position:absolute;left:12%;top:calc(100% + 1px);width:76%;height:30px;background:url('button-crest.svg?v=white-4') center/contain no-repeat;transform:rotate(180deg);pointer-events:none;z-index:3}
+.catalog-home .campaign-slider .ornament-button-wrap .catalog-entry-button{position:relative;z-index:1;box-shadow:0 2px 15px #0002}
+@media(max-width:760px){.ornament-button-wrap{margin:28px 29px 24px}.ornament-crown{height:30px}.ornament-button-wrap::after{height:26px}.ornament-left,.ornament-right{width:78px;height:25px}.ornament-left{left:-54px}.ornament-right{right:-54px}.catalog-home .campaign-slider .ornament-button-wrap .catalog-entry-button{min-width:180px;padding-inline:20px}}
+/* White button and ornament in every interaction state. */
+.catalog-home .campaign-slider .ornament-button-wrap .catalog-entry-button,
+.catalog-home .campaign-slider .ornament-button-wrap .catalog-entry-button:hover,
+.catalog-home .campaign-slider .ornament-button-wrap .catalog-entry-button:active{background:#fff;color:#000;border-color:#fff}

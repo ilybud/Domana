@@ -1,0 +1,21 @@
+{
+  "page": "https://domanaminique.com/one-of-one",
+  "images": [
+    {
+      "source": "https://static.tildacdn.com/tild3633-3162-4637-b637-393038663132/IMAGE_2026-01-09_084.jpg",
+      "local": "editorial-1.jpg"
+    },
+    {
+      "source": "https://static.tildacdn.com/tild3332-3262-4966-b739-656132333731/IMAGE_2026-01-09_085.jpg",
+      "local": "editorial-2.jpg"
+    },
+    {
+      "source": "https://static.tildacdn.com/tild6336-3764-4138-a435-323739653831/IMAGE_2026-01-09_090.jpg",
+      "local": "editorial-3.jpg"
+    },
+    {
+      "source": "https://static.tildacdn.com/tild3335-3231-4134-a165-393337343332/IMAGE_2026-01-09_090.jpg",
+      "local": "editorial-4.jpg"
+    }
+  ]
+}
